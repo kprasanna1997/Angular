@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
@@ -12,6 +12,7 @@ export class DataBindingComponent implements OnInit {
   position: string = "center"
   name: string = "Google";
   isCreated: string = "";
+  @ViewChild("inputElement") elementRefenrence:ElementRef
 
   constructor() {
     setTimeout(() => {
@@ -28,6 +29,12 @@ export class DataBindingComponent implements OnInit {
 
   createServer() {
     this.isCreated = `Server is created with server name ${this.name}`
+  }
+
+  getInputValue(element:any){
+   console.log(element.value);
+   console.log(this.elementRefenrence.nativeElement.value)
+   
   }
 
 }

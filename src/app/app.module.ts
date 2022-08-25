@@ -11,6 +11,7 @@ import { ElseDirective } from './directives/else.directive';
 import { GamecontrolComponent } from './communications/gamecontrol/gamecontrol.component';
 import { OddComponent } from './communications/odd/odd.component';
 import { EvenComponent } from './communications/even/even.component';
+import { AppHighlightDirective } from './directives/app-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EvenComponent } from './communications/even/even.component';
     ElseDirective,
     GamecontrolComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    AppHighlightDirective
   ],
   imports: [
     BrowserModule,
