@@ -1,11 +1,13 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-lg-8">
-            <h3>{{welcome}}</h3>   <!-- String interpolation -->
+            <h3>{{welcome}}</h3> <!-- String interpolation -->
             <!-- <button class="btn btn-primary" [disabled]="!isTrue">Add</button> Property binding -->
             <!-- <input class="form-control mt-4" (input)="serverName($event)"/> $event -->
-            <p [align]="position">This is Property Binding</p>  <!--Property binding-->
-            <button class="btn btn-success d-flex" (click)="createServer()">Create server</button> <!--Event binding-->
+            <p [align]="position">This is Property Binding</p>
+            <!--Property binding-->
+            <button class="btn btn-success d-flex" (click)="createServer()">Create server</button>
+            <!--Event binding-->
             <label for="">Enter a server name</label>
             <input class="form-control mt-1" [(ngModel)]="name"> <!-- Two-way binding-->
             <p>Server name is {{name}}</p>

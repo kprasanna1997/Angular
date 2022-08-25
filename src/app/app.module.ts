@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { ManualComponent } from './manual/manual.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './directives/highlight.directive';
+import { ElseDirective } from './directives/else.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    ManualComponent
+    ManualComponent,
+    HighlightDirective,
+    ElseDirective
   ],
   imports: [
     BrowserModule,

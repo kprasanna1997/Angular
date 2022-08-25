@@ -1,1 +1,29 @@
-<p>This is manual component</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-xm-12 col-sm-10">
+            <p highLight>This is manual component</p>
+            <p [ngStyle]="{backgroundColor:'isBlue'?'blue':'yellow'}" [ngClass]="{'font-color':'isBlue'}">This is ng
+                style, class element</p>
+            <div>
+                <table class="table">
+                    <tr>
+                    <th>Serial number</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    </tr>
+                    <tr *ngFor="let user of users; let i=index ">
+                        <td>{{i+1}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.age}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div *ngIf="!isFalse" highLight>
+                <p>This is ngIf block executed when condition is true.</p>
+            </div>
+            <div *ngElse="isFalse" highLight>
+                <p>This is ngElse block executed when condition is false.</p>
+            </div>
+        </div>
+    </div>
+</div>
