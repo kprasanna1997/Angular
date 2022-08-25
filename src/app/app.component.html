@@ -1,1 +1,4 @@
 <app-data-binding></app-data-binding>
+<app-gamecontrol (fireNumber)="getNumber($event)"></app-gamecontrol>
+<app-even *ngFor="let number of evenNumbers" [evenNumber]="number"></app-even>
+<app-odd *ngFor="let number of oddNumbers" [oddNumber]="number"></app-odd>

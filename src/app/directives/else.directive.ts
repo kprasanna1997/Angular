@@ -6,7 +6,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 export class ElseDirective {
 
-    constructor(private templateRef: TemplateRef<any>, private viewContainer: ViewContainerRef) { }
+    constructor(private templateRef: TemplateRef<HTMLElement>, private viewContainer: ViewContainerRef) { }
 
     @Input() set ngElse(condition: boolean) {
         if (!condition) {

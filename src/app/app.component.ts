@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practices';
+  evenNumbers:number[]=[]
+  oddNumbers:number[]=[]
+
+  getNumber(numberSent:number){
+    console.log(numberSent);
+    
+    if(numberSent%2===0){
+      this.evenNumbers.push(numberSent)
+    }else{
+      this.oddNumbers.push(numberSent)
+    }
+  }
 }

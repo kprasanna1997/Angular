@@ -8,6 +8,9 @@ import { ManualComponent } from './manual/manual.component';
 import { FormsModule } from '@angular/forms';
 import { HighlightDirective } from './directives/highlight.directive';
 import { ElseDirective } from './directives/else.directive';
+import { GamecontrolComponent } from './communications/gamecontrol/gamecontrol.component';
+import { OddComponent } from './communications/odd/odd.component';
+import { EvenComponent } from './communications/even/even.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { ElseDirective } from './directives/else.directive';
     DataBindingComponent,
     ManualComponent,
     HighlightDirective,
-    ElseDirective
+    ElseDirective,
+    GamecontrolComponent,
+    OddComponent,
+    EvenComponent
   ],
   imports: [
     BrowserModule,
